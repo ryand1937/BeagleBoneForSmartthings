@@ -284,6 +284,7 @@ string parse_incoming_command(string message)
 		loc2 = message.find("@DONE");
 		system("mplayer -ao alsa:device=hw=1 /home/debian/bin/res/TestAudio.MP3" ); //Copy the file to this locaion.
 		returnmsg = "{\"PLAY\":\"FILEPLAYED\"}" ;
+		cout<<returnmsg;
 	}
 
 	return returnmsg;
